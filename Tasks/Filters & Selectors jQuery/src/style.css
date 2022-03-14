@@ -1,0 +1,102 @@
+#header h1{
+    text-align: center;
+    color: rgb(178, 32, 39);
+    font-size: x-large;
+}
+
+.inputfeilds{
+    padding: 2px 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+table, td,th{
+    border: 1px solid red;
+    border-collapse:collapse;
+    padding: 5px 5px;
+}
+th{
+    background: lightcoral;
+}
+td{
+    background: lightcyan;
+}
+
+#form{
+    border: 1px solid lightgreen;
+    width: 24rem;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgb(93, 211, 207);
+}
+label{
+    display: block;
+}
+button{
+    padding: 5px 20px;
+    background: rgb(93, 211, 207);
+    border: 1px solid rgb(99, 99, 204);
+}
+
+.dropbtn {
+    background-color: #5476e6;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+  
+  .content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -10px;
+  }
+  
+  .content a {
+    color: rgb(46, 40, 40);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+  }
+  
+  .content a:hover {
+      background-color: rgb(180, 161, 161);
+    }
+  
+  .dropdown:hover .content {
+      display: block;
+    }
+  
+  .dropdown:hover .dropbtn {
+      background-color: #6ec471;
+    }
+
+    #footer{
+        position: absolute;
+        top:10px;
+        left:10px
+    }
+    #footer label{
+        display: inline;
+    }
+    #sucess{
+        color: red;
+    }
+    #warn{
+        color:red;
+    }

@@ -1,0 +1,97 @@
+ul {
+    overflow: hidden;
+    list-style: none;
+  }
+  li {
+    float: right;
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .logo{
+      margin-left: 20px;
+  }
+  .section1 {
+    background-image: linear-gradient(#095c79, #088f89, #00b0ff);
+    overflow: hidden;
+  }
+  .section1 h2 {
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+  .section1 p {
+    max-width: 500px;
+    margin-left: 30px;
+  }
+  .section1 button {
+    margin: 0px 0px 15px 30px;
+  }
+  .section1 button:hover{
+    background-color: purple;
+    cursor: pointer;
+    color: black;
+    border: 2px solid green;
+  }
+  .section2 {
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px;
+    
+  }
+  .card{
+      /* margin: 74px; */
+      
+      max-width: 300px;
+      margin: auto;
+    box-sizing: border-box;
+
+  }
+  .card h2{
+      text-align: center;
+  }
+  .content{
+
+    text-align: center;
+  }
+  .blank{
+      margin: auto ;
+      width: 280px;
+      height: 100px;
+      background-color: #00b0ff;
+  }
+  .card a{
+      display: block;
+      width: 80px;
+      margin : auto
+
+  }
+  .section3{
+    background-image: linear-gradient(#095c79, #088f89, #00b0ff);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inline{
+      margin: 15px;
+   
+  }
+  [type = "text"]{
+      padding: 7px;
+  }
+  footer {
+    display: flex;
+  }
+  .p1{
+    text-align: left;
+  }
+  .p2{
+    align-items: right;
+  }

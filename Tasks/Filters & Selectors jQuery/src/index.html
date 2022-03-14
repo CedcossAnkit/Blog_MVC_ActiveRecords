@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter & selectors</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><h1>jQuery - Filters & Selectors</h1></div>
+        
+        <div id="main">
+            <div id="form">
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Filter</button>
+                    <div class="content">
+                      <a href="#">Operating System</a>
+                      <a href="#">Brand</a>
+                    </div>
+                  </div>
+
+                <br><br>
+            <label>ID: </label><input type="text" class="inputfeilds" id="id"><br><br>
+            <label>Name: </label><input type="text" class="inputfeilds" id="name"><br><br>
+            <label>Brand: </label><input type="text" class="inputfeilds" id="brand"><br><br>
+            <label>Operating System: </label><input type="text" class="inputfeilds" id="system"><br><br>
+                <button id="submit">Submit</button><br><br>
+
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Operating System</th>
+                        <th>Hide</th>
+                    </tr>
+                    <tbody id="table">
+                </table>
+            </div>
+        </div>
+
+        <div id="footer"><br><br>
+            <label id="sucess">Sucessfull :</label>&nbsp;&nbsp;
+                <label for="" id="sucessfull"></label><br><br>
+            
+            <label id="warn">Warning</label>&nbsp;&nbsp;
+                <label for="" id="warning"></label><br>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
