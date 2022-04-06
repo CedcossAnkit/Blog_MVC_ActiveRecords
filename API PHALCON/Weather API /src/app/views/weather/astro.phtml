@@ -1,0 +1,93 @@
+<?php
+
+// echo "<pre>";
+// print_r($data);
+// die;
+if (isset($data)) {
+
+    // $updatetime = $data->location->tz_id;
+    // $localtime = $data->location->localtime;
+    $country = $data->location->region;
+    $city = $data->location->name;
+
+
+    $sunrise = $data->forecast->forecastday[0]->astro->sunrise;
+    $sunset = $data->forecast->forecastday[0]->astro->sunset;
+    $moonrise = $data->forecast->forecastday[0]->astro->moonrise;
+    $moonset = $data->forecast->forecastday[0]->astro->moonset;
+    $moon_phase = $data->forecast->forecastday[0]->astro->moon_phase;
+    $moon_illumination = $data->forecast->forecastday[0]->astro->moon_illumination;
+
+
+
+
+
+} else {
+
+    $updatetime = "not found";
+    $tempcel  = "not found";
+    $country  = "not found";
+    $city     = "not found";
+    $wind     = "not found";
+    $pressure = "not found";
+    $humidity = "not found";
+    $uvindex  = "not found";
+}
+// print_r($data);
+// foreach ($data as $Key => $value) {
+
+// }
+
+echo "</pre>";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../public/style.css">
+</head>
+
+<body>
+    <div class="h1 text-center text-danger" style="font-family: sans-serif;">Astronomy</div>
+
+    <div class="mt-5"></div>
+
+    <div class="courses-container d-flex justify-content-center">
+        <div class="course">
+            <div class="course-preview">
+                <div class="h5">Location</div>
+                <div class="text-danger mt-2 h6"><?php echo $country ?></div>
+            
+            </div>
+            <div class="course-info">
+                <div class="progress-container">
+                    <div class="progress"></div>
+                    <span class="progress-text">
+                        6/9 Challenges
+                    </span>
+                </div>
+                <h6 class="text-danger mt-2"><b>sunrise</b></h6>
+                <h6 class="text-success"><?php echo $sunrise ?></h6>
+                <h6 class="text-danger mt-2"><b>sunset</b></h6>
+                <h6 class="text-success"><?php echo $sunset ?></h6>
+                <h6 class="text-danger mt-2"><b>moonrise</b></h6>
+                <h6 class="text-success"><?php echo $moonrise ?></h6>
+                <h6 class="text-danger mt-2"><b>moonset</b></h6>
+                <h6 class="text-success"><?php echo $moonset ?></h6>
+                <h6 class="text-danger mt-2"><b>moon_phase</b></h6>
+                <h6 class="text-success"><?php echo $moon_phase ?></h6>
+                <h6 class="text-danger mt-2"><b>moon_illumination</b></h6>
+                <h6 class="text-success"><?php echo $moon_illumination ?></h6>
+                <button class="btnn"><a style="text-decoration:none; color:white" target='_blank' href="http://localhost:8080/weather/home">Home</a></button>
+            </div>
+        </div>
+    </div>
+    <?php require_once(APP_PATH."/views/weather/button.phtml")?>
+</body>
+
+</html>

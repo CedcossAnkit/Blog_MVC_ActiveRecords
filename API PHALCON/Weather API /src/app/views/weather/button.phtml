@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<nav class="d-flex justify-content-center">
+        <button type="button" class="ml-1 mt-3 btn btn-primary"><a href="http://localhost:8080/weather/singlepage?place=<?php echo $city ?>" style="text-decoration: none; color:white">Current Weather</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-secondary"><a href="http://localhost:8080/weather/forcast?place=<?php echo $city ?>" style="text-decoration: none; color:white">Forecast</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-success"><a href="http://localhost:8080/weather/history?place=<?php echo $city ?>" style="text-decoration: none; color:white">History</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-danger"><a href="http://localhost:8080/weather/timezone?place=<?php echo $city ?>" style="text-decoration: none; color:white">Time Zone</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-warning"><a href="http://localhost:8080/weather/sports?place=<?php echo $city ?>" style="text-decoration: none; color:white">Sports</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-info"><a href="http://localhost:8080/weather/astro?place=<?php echo $city ?>" style="text-decoration: none; color:white">Astronomy</a></button>
+        <button type="button" class="ml-1 mt-3 btn btn-danger"><a href="http://localhost:8080/weather/WeatherAlerts?place=<?php echo $city ?>" style="text-decoration: none; color:white">Weather Alert</a></button>
+
+        <button type="button" class="ml-1 mt-3 btn btn-dark"><a href="http://localhost:8080/weather/airquality?place=<?php echo $city ?>" style="text-decoration: none; color:white">Air Quality</a></button>
+    </nav>
+
+</body>
+
+</html>
